@@ -1,6 +1,7 @@
 
  import React , { Component } from 'react';
- import '../App.css';
+ import {connect} from 'react-redux';
+ import { addReminder } from '../actions';
 
 
 
@@ -14,11 +15,12 @@
 }
 
 	addReminder() {
-	console.log('this.state' , this.state);
-
+	
+	this.props.addReminder(this.state.text);
 }
 
 	render() {
+	console.log('this.props' , this.props);
 	return (
 
 	<div className="App">
@@ -46,4 +48,15 @@
 	}
 	}
 
-export default App;
+function mapSateToProps(state) {
+
+return {
+
+	reminders: state
+}
+
+}
+ 
+
+
+export default connect(mapSateToProps, {addReminder})(App);
