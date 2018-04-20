@@ -45,10 +45,10 @@
 	return (
 
 	<div className="App">
-	<div className="title">
-	Reminder app 
+	<div className="title" id="title1">
+	Reminder Me
 	</div>
-	<div className="form-inline">
+	<div className="form-inline reminder-form">
 	<div className="form-group">
 	<input 
 	className="form-control"
@@ -59,7 +59,7 @@
 
 	
 	<button
-	type="button"
+	type="button" id="reminder"
 	className="btn btn-add"
 	onClick={() => this.addReminder()}
 	>
