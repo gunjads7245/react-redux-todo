@@ -44,3 +44,13 @@ input {
 	font-kerning: 0.7em;
 	color: white;
 }
+.list-item {
+	display: inline-block;
+
+}
+.delete-button {
+	float: right;
+	margin-top: -20px;
+
+
+}
