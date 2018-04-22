@@ -1,7 +1,7 @@
 
  import React , { Component } from 'react';
  import {connect} from 'react-redux';
- import { addReminder, deleteReminder } from '../actions';
+ import { addReminder, deleteReminder, clearReminders } from '../actions';
 import moment from 'moment';
 
 
@@ -90,8 +90,16 @@ import moment from 'moment';
 	</button>
 	</div>
 	{ this.renderReminders() }
+	< button type="button" id="clearall" 
+	className="btn btn-clearAll" 
+	onClick={() => this.props.clearReminders()}
+	>
+	Clear All
+	
 
+	</button>
 	</div>
+	
 	)
 	}
 	}
@@ -107,4 +115,4 @@ return {
  
 
 
-export default connect(mapSateToProps, {addReminder , deleteReminder})(App);
+export default connect(mapSateToProps, {addReminder , deleteReminder,clearReminders})(App);

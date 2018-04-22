@@ -24,7 +24,17 @@ body {
 	
 
 }
+#clearall {
+
+	background-color: #008CBA;
+	color: white;
+	margin-right: 40px;
+	
+
+
+}
 .reminder-form {
+
 
 	padding: 30px;
 
