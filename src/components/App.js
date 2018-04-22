@@ -18,11 +18,11 @@
 	
 	this.props.addReminder(this.state.text);
 }
+	
 
 	deleteReminder(id) {
 
-	console.log('deleting in application' , id);
-	console.log('this.props', this.props);
+	this.props.deleteReminder(id);
 
 }
 	
