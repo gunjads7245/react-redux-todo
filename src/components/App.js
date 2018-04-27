@@ -65,7 +65,7 @@ import moment from 'moment';
 	return (
         <div className="App">
 	<div className="title" id="title1">
-	Reminder Me
+	Remind Me
 	</div>
 	<div className="form-inline reminder-form">
 	<div className="form-group">
