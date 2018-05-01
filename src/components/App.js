@@ -67,6 +67,7 @@ import moment from 'moment';
 	<div className="title" id="title1">
 	Remind Me
 	</div>
+	
 	<div className="form-inline reminder-form">
 	<div className="form-group">
 	<input 
@@ -80,7 +81,7 @@ import moment from 'moment';
 	onChange={event => this.setState({dueDate: event.target.value})}
 	/>
 
-	</div>
+	
 	<button
 	type="button" id="reminder"
 	className="btn btn-add"
@@ -96,11 +97,13 @@ import moment from 'moment';
 	>
 	Clear All
 	
-
+	
 	</button>
+	</div>
 	</div>
 	
 	)
+	
 	}
 	}
 
